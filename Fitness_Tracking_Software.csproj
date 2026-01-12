@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADF9D0DF-0AB7-40E0-8498-48E7777B203D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Fitness_Tracking_Software</RootNamespace>
+    <AssemblyName>Fitness_Tracking_Software</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity.Designer.cs">
+      <DependentUpon>Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomePage.Designer.cs">
+      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apply_Acticity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply_Acticity.Designer.cs">
+      <DependentUpon>Apply_Acticity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsGoal.cs" />
+    <Compile Include="clsUser.cs" />
+    <Compile Include="CustomerHomPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerHomPage.Designer.cs">
+      <DependentUpon>CustomerHomPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsFitnessTracking.cs">
+      <DependentUpon>dsFitnessTracking.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsFitnessTracking.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFitnessTracking.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report_All_Uset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_All_Uset.Designer.cs">
+      <DependentUpon>Report_All_Uset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetGoal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetGoal.Designer.cs">
+      <DependentUpon>SetGoal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePws.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePws.Designer.cs">
+      <DependentUpon>UpdatePws.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUser.Designer.cs">
+      <DependentUpon>UpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegister.Designer.cs">
+      <DependentUpon>UserRegister.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Activity.resx">
+      <DependentUpon>Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomePage.resx">
+      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply_Acticity.resx">
+      <DependentUpon>Apply_Acticity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerHomPage.resx">
+      <DependentUpon>CustomerHomPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report_All_Uset.resx">
+      <DependentUpon>Report_All_Uset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetGoal.resx">
+      <DependentUpon>SetGoal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePws.resx">
+      <DependentUpon>UpdatePws.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUser.resx">
+      <DependentUpon>UpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegister.resx">
+      <DependentUpon>UserRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dsFitnessTracking.xsc">
+      <DependentUpon>dsFitnessTracking.xsd</DependentUpon>
+    </None>
+    <None Include="dsFitnessTracking.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFitnessTracking.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsFitnessTracking.xss">
+      <DependentUpon>dsFitnessTracking.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym_icon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images__4_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w03193-small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images__6_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
